@@ -1,0 +1,24 @@
+services:
+  uavscope:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      args:
+        - VITE_TATOR_HOST=${VITE_TATOR_HOST}
+        - VITE_TATOR_TOKEN=${VITE_TATOR_TOKEN}
+        - VITE_BOX_TYPE=${VITE_BOX_TYPE}
+        - VITE_PROJECT_ID=${VITE_PROJECT_ID}
+        - VITE_API_TIMEOUT=${VITE_API_TIMEOUT}
+        - VITE_MAX_RETRIES=${VITE_MAX_RETRIES}
+    container_name: uavscope
+    ports:
+      - "3000:80"
+    networks:
+      - tator_private
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+networks:
+  tator_private:
+    external: true

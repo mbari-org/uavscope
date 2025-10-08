@@ -3,7 +3,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-A React-based application for visualizing UAV mission data with interactive maps, detection galleries, and timeline filtering.
+A React-based web application for visualizing UAV mission data with interactive maps, detection galleries, and timeline filtering.
 
 Author: dcline at mbari.org
 
@@ -69,4 +69,3 @@ The application works with three main data types:
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
-
